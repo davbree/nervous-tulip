@@ -49,7 +49,7 @@
 				{{ if $section.video_embed_html }}
 					{{ $section.video_embed_html | safeHTML }}
 				{{ else }}
-					<p></p><img src="{{ $section.image | relURL }}" alt="{{ $section.image_alt }}" class="{{ if eq $align_x "center" }}mx-auto{{ end }}{{ if eq $align_x "right" }} ml-auto{{ end }}" />
+					<p><img src="{{ $section.image | relURL }}" alt="{{ $section.image_alt }}" class="{{ if eq $align_x "center" }}mx-auto{{ end }}{{ if eq $align_x "right" }} ml-auto{{ end }}" /></p>
 				{{ end }}
 			</div>
 			{{ end }}
